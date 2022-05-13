@@ -1,5 +1,6 @@
 import styled from "styled-components";
-export const Wrapper = styled.div`
+import { motion } from "framer-motion";
+export const Wrapper = styled(motion.div)`
   background: ${(props) => props.theme.colors.colorPrimary};
   position: absolute !important;
   top: 90px;
@@ -7,6 +8,9 @@ export const Wrapper = styled.div`
   z-index: 111;
   padding: 20px 0 90px;
   width: 70px;
+  height: 224px;
+  overflow: hidden;
+
   @media screen and (max-width: 1023px) {
     display: none;
   }

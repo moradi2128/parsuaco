@@ -1,5 +1,6 @@
 import styled from "styled-components";
-export const TextContainer = styled.div`
+import { motion } from "framer-motion";
+export const TextContainer = styled(motion.div)`
   display: flex;
   flex-direction: column;
   position: absolute;
@@ -88,12 +89,12 @@ export const SubTitle = styled.h4`
   color: ${(props) => props.theme.colors.colorMainLight};
   font-weight: 500;
 `;
-export const AnimationStart = styled.div`
+export const AnimationStart = styled(motion.div)`
   background: ${(props) => props.theme.colors.colorMain};
-  height: 100%;
+  height: 108%;
   position: absolute;
-  top: 0;
+  top: -40px;
   right: 0;
+  left: -57px;
   z-index: 1;
 `;
-

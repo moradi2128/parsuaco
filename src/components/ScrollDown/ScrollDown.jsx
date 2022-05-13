@@ -2,10 +2,16 @@ import React from "react";
 import { Wrapper, ScrollText, ScrollContainer, Mouse, Wheel } from "./index";
 import Theme from "../../Theme/Theme";
 
+import { openBoxLeftToRightVariants } from "../../motionVariants/motionVariants";
+
 const ScrollDown = () => {
   return (
     <Theme>
-      <Wrapper>
+      <Wrapper
+        variants={openBoxLeftToRightVariants}
+        initial="hidden"
+        animate="visible"
+      >
         <ScrollText>Scroll Down</ScrollText>
         <ScrollContainer>
           <Mouse>

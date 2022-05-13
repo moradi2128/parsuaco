@@ -1,5 +1,6 @@
 import styled from "styled-components";
-export const Wrapper = styled.section`
+import { motion } from "framer-motion";
+export const Wrapper = styled(motion.section)`
   padding: 90px 0 50px 0;
   position: relative;
   z-index: 1;
@@ -44,7 +45,7 @@ export const Wrapper = styled.section`
     width: 500px;
   }
 `;
-export const ImageBg = styled.img`
+export const ImageBg = styled(motion.img)`
   position: absolute;
   top: 0;
   left: 0;

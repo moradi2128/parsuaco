@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
+
 export const FooterWrapper = styled.footer`
   background: #262627;
   @media screen and (min-width: 1024px) {

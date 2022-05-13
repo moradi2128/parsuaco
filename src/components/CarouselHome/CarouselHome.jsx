@@ -22,6 +22,7 @@ import { carouselHome } from "../../data";
 import Captions from "../Captions/Captions";
 
 const CarouselHome = () => {
+  
   const [controlledSwiper, setControlledSwiper] = useState(null);
   const pagination = {
     clickable: true,
@@ -45,10 +46,10 @@ const CarouselHome = () => {
         loop={true}
         pagination={pagination}
         navigation={true}
-        // autoplay={{
-        //   delay: 3000,
-        //   disableOnInteraction: false,
-        // }}
+        autoplay={{
+          delay: 4000,
+          disableOnInteraction: false,
+        }}
         modules={[Controller, Autoplay, Pagination, Navigation, Mousewheel]}
         controller={{ control: controlledSwiper }}
         className="swiper-img swiper-text"

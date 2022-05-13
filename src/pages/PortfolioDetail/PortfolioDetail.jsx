@@ -1,4 +1,9 @@
 import React, { useRef } from "react";
+import { motion } from "framer-motion";
+import {
+  containerVariants,
+  LeftToRightVariants,
+} from "../../motionVariants/motionVariants";
 import {
   Wrapper,
   HeightEmulator,
@@ -17,7 +22,7 @@ import Tabs from "../../components/Tabs/Tabs";
 // === Icons ===
 import { BsArrowRightShort } from "react-icons/bs";
 // === Image ===
-import img from "../../assets/images/portfolio/2.jpg";
+import img from "../../assets/images/home/2.jpg";
 import Footer from "../../components/Footer/Footer";
 // === Data ===
 const tabs = [
@@ -41,63 +46,74 @@ const PortfolioDetail = () => {
   const handlerScroll = () => {
     window.scrollTo({
       top: ref.current.offsetTop,
-      behavior: 'smooth'
+      behavior: "smooth",
     });
   };
   return (
     <Theme>
-      <main>
-        <section>
-          <div className="container">
-            <Wrapper>
-              <DetailTitle>
-                parsua
-                <br /> industrial group
-                <br /> export & import
-              </DetailTitle>
-              <SubTitle>the power of good choice</SubTitle>
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
+        <main>
+          <section>
+            <div className="container">
+              <Wrapper
+                variants={LeftToRightVariants}
+                initial="hidden"
+                animate="visible"
+              >
+                <DetailTitle>
+                  parsua
+                  <br /> industrial group
+                  <br /> export & import
+                </DetailTitle>
+                <SubTitle>the power of good choice</SubTitle>
 
-              <LinkDetail type="button" onClick={handlerScroll}>
-                details
-                <BsArrowRightShort />
-              </LinkDetail>
-            </Wrapper>
-          </div>
-        </section>
-        <section>
-          <WrapperImg>
-            <img src={img} type="" />
-          </WrapperImg>
-        </section>
-        <DetailWrapper ref={ref}>
-          <div className="container">
-            <h3>Project Derails</h3>
-            <BoxContainer>
-              <BoxDescription>
-                <ul>
-                  <li>
-                    <span>data : </span> 2022.01.28
-                  </li>
-                  <li>
-                    <span>category : </span> commerce
-                  </li>
-                  <li>
-                    <span>status : </span> finished
-                  </li>
-                  <li>
-                    <span>location : </span> iran
-                  </li>
-                </ul>
-              </BoxDescription>
-              <TabContainer>
-                <Tabs tabs={tabs} />
-              </TabContainer>
-            </BoxContainer>
-          </div>
-        </DetailWrapper>
-      </main>
-      <HeightEmulator />
-      <Footer />
+                <LinkDetail type="button" onClick={handlerScroll}>
+                  details
+                  <BsArrowRightShort />
+                </LinkDetail>
+              </Wrapper>
+            </div>
+          </section>
+          <section>
+            <WrapperImg>
+              <img src={img} type="" />
+            </WrapperImg>
+          </section>
+          <DetailWrapper ref={ref}>
+            <div className="container">
+              <h3>Project Derails</h3>
+              <BoxContainer>
+                <BoxDescription>
+                  <ul>
+                    <li>
+                      <span>data : </span> 2022.01.28
+                    </li>
+                    <li>
+                      <span>category : </span> commerce
+                    </li>
+                    <li>
+                      <span>status : </span> finished
+                    </li>
+                    <li>
+                      <span>location : </span> iran
+                    </li>
+                  </ul>
+                </BoxDescription>
+                <TabContainer>
+                  <Tabs tabs={tabs} />
+                </TabContainer>
+              </BoxContainer>
+            </div>
+          </DetailWrapper>
+        </main>
+        <HeightEmulator />
+        <Footer />
+      </motion.div>
     </Theme>
   );
 };

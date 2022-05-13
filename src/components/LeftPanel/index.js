@@ -14,17 +14,17 @@ export const Wrapper = styled.div`
 export const Top = styled.div`
   position: absolute;
   left: 40px;
-  top: 150px;
+  top: 140px;
   span {
     position: absolute;
-    left: -170px;
+    left: -146px;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 10px;
     letter-spacing: 4px;
     padding: 10px 0;
-    width: 350px;
-    top: 10px;
+    width: 300px;
+    top: -6px;
     text-align: center;
     transform: rotate(-90deg);
     color: hsla(0, 0%, 100%, 0.31);
@@ -41,8 +41,8 @@ export const Top = styled.div`
     :before {
       content: "";
       position: absolute;
-      width: 190px;
-      right: -40px;
+      width: 171px;
+      right: -28px;
       height: 100%;
       top: 0;
       background: hsla(0, 0%, 100%, 0.04);
@@ -51,7 +51,7 @@ export const Top = styled.div`
 `;
 export const Down = styled.div`
   position: absolute;
-  bottom: 70px;
+  bottom:25px;
   left: 50%;
   margin-left: -20px;
   width: 40px;

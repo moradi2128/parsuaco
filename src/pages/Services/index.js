@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const HeightEmulator = styled.div`
   height: 625px;
   position: absolute;
@@ -13,7 +13,7 @@ export const ImgContainer = styled.div`
     margin-bottom: 50px;
   }
 `;
-export const Img = styled.img`
+export const Img = styled(motion.img)`
   width: 100%;
 `;
 export const ImgDes = styled.div`

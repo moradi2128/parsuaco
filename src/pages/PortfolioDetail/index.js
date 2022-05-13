@@ -1,5 +1,6 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
-export const Wrapper = styled.h2`
+export const Wrapper = styled(motion.h2)`
   padding: 90px 0;
   position: relative;
   &:before {

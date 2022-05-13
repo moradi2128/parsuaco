@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const Container = styled.div`
   position: relative;
   width: 100%;
@@ -26,7 +26,7 @@ export const Container = styled.div`
     margin-bottom:0;
   }
 `;
-export const FilterWrapper = styled.div`
+export const FilterWrapper = styled(motion.div)`
   @media screen and (min-width: 1024px) {
     display: flex;
     align-items: center;

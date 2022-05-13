@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { motion } from "framer-motion";
 export const ImgContainer = styled.div`
   padding-top: 4rem;
   position: relative;
@@ -14,7 +14,7 @@ export const HeightEmulator = styled.div`
   width: 100%;
 `;
 
-export const Img = styled.img`
+export const Img = styled(motion.img)`
   width: 100%;
 `;
 export const ImgDes = styled.div`

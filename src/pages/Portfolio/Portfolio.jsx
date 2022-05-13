@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { motion } from "framer-motion";
 import "./styles.css";
 import {
   Container,
@@ -20,6 +21,11 @@ import Theme from "../../Theme/Theme";
 
 // === Data ===
 import { cardsDefault, filtersDefault } from "../../data";
+// === motion Variants ===
+import {
+  containerVariants,
+  ShowFilterPortfolioVariants,
+} from "../../motionVariants/motionVariants";
 
 const Portfolio = () => {
   const [filters, updateFilters] = useState(filtersDefault);
@@ -44,9 +50,18 @@ const Portfolio = () => {
   };
   return (
     <Theme>
-      <main>
+      <motion.main
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+        exit="exit"
+      >
         <section>
-          <FilterWrapper>
+          <FilterWrapper
+            variants={ShowFilterPortfolioVariants}
+            initial="hidden"
+            animate="visible"
+          >
             <TitleFilter>
               work filter
               <BsArrowRight />
@@ -95,7 +110,7 @@ const Portfolio = () => {
             </IsoTopeGrid>
           </Container>
         </section>
-      </main>
+      </motion.main>
     </Theme>
   );
 };

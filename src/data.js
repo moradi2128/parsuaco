@@ -4,15 +4,9 @@ import img3 from "./assets/images/home/3.jpg";
 import img4 from "./assets/images/home/4.jpg";
 import img5 from "./assets/images/home/5.jpg";
 import img6 from "./assets/images/home/6.jpg";
-// === img portfolio ===
-import portfolioImg1 from "./assets/images/portfolio/1.jpg";
-import portfolioImg2 from "./assets/images/portfolio/2.jpg";
-import portfolioImg3 from "./assets/images/portfolio/3.jpg";
-import portfolioImg4 from "./assets/images/portfolio/4.jpg";
-import portfolioImg5 from "./assets/images/portfolio/5.jpg";
-import portfolioImg6 from "./assets/images/portfolio/6.jpg";
-import portfolioImg7 from "./assets/images/portfolio/7.jpg";
-import portfolioImg8 from "./assets/images/portfolio/8.jpg";
+import img7 from "./assets/images/home/7.jpg";
+import img8 from "./assets/images/home/8.jpg";
+
 
 // === carousel Home ===
 export const carouselHome = [
@@ -22,8 +16,8 @@ export const carouselHome = [
     subTitle: "The power of good choice",
     linkTitle: "View Project ",
     date: "24 Jan 2022",
-    image: img1,
-    to: "/",
+    image: img8,
+    to: "/portfolioDetail",
   },
   {
     id: 1,
@@ -32,7 +26,7 @@ export const carouselHome = [
     linkTitle: "View Project ",
     date: "24 Jan 2022",
     image: img2,
-    to: "/",
+    to: "/portfolioDetail",
   },
   {
     id: 2,
@@ -41,7 +35,7 @@ export const carouselHome = [
     linkTitle: "View Project ",
     date: "24 Jan 2022",
     image: img3,
-    to: "/",
+    to: "/portfolioDetail",
   },
   {
     id: 3,
@@ -50,7 +44,7 @@ export const carouselHome = [
     linkTitle: "View Project ",
     date: "24 Jan 2022",
     image: img4,
-    to: "/",
+    to: "/portfolioDetail",
   },
   {
     id: 4,
@@ -59,7 +53,7 @@ export const carouselHome = [
     linkTitle: "View Project ",
     date: "24 Jan 2022",
     image: img5,
-    to: "/",
+    to: "/portfolioDetail",
   },
   {
     id: 5,
@@ -68,7 +62,7 @@ export const carouselHome = [
     linkTitle: "View Project ",
     date: "24 Jan 2022",
     image: img6,
-    to: "/",
+    to: "/portfolioDetail",
   },
 ];
 
@@ -78,7 +72,7 @@ export const cardsDefault = [
   {
     id: "a",
     filter: ["ceramics parts", "ceramics parts"],
-    image: portfolioImg1,
+    image: img1,
     title: "commerce",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -86,7 +80,7 @@ export const cardsDefault = [
   {
     id: "b",
     filter: ["ferroalloys", "news"],
-    image: portfolioImg2,
+    image: img2,
     title: "ferroalloys",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -94,7 +88,7 @@ export const cardsDefault = [
   {
     id: "c",
     filter: ["ceramics parts", "advanced building"],
-    image: portfolioImg3,
+    image: img3,
     title: "ceramics parts",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -102,7 +96,7 @@ export const cardsDefault = [
   {
     id: "d",
     filter: ["raw materials", "news"],
-    image: portfolioImg4,
+    image: img4,
     title: "news",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -110,7 +104,7 @@ export const cardsDefault = [
   {
     id: "e",
     filter: ["equipment", "commerce"],
-    image: portfolioImg5,
+    image: img5,
     title: "commerce",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -118,7 +112,7 @@ export const cardsDefault = [
   {
     id: "f",
     filter: ["machinery", "advanced building"],
-    image: portfolioImg6,
+    image: img6,
     title: "machinery",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -126,7 +120,7 @@ export const cardsDefault = [
   {
     id: "h",
     filter: ["engineering", "ceramics parts"],
-    image: portfolioImg7,
+    image: img7,
     title: "engineering",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",
@@ -134,7 +128,7 @@ export const cardsDefault = [
   {
     id: "m",
     filter: ["engineering", "ceramics parts"],
-    image: portfolioImg8,
+    image: img8,
     title: "ceramics parts",
     linkText: "PARSUA INDUSTRIAL GROUP EXPORT & IMPORT ",
     linkTo: "/portfolioDetail",

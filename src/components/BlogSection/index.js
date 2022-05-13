@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import styled from "styled-components";
 export const Wrapper = styled.div`
   border-bottom: 1px solid ${(props) => props.theme.colors.colorMainSecLight};
@@ -7,7 +8,7 @@ export const Wrapper = styled.div`
     border-bottom: none;
   }
 `;
-export const Title = styled.div`
+export const Title = styled(motion.div)`
   position: relative;
   h3 {
     font-size: 26px;

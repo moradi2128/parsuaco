@@ -24,7 +24,8 @@ export const Wrapper = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
-  background-color: ${(props) => props.theme.colors.colorMain};
+  // background-color: ${(props) => props.theme.colors.colorMain};
+  background: radial-gradient(circle, rgba(58,58,64,1) 0%, rgba(45,45,50,1) 100%);
   position: fixed;
   inset: 0;
   z-index: 999;
