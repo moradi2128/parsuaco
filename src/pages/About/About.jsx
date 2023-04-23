@@ -116,7 +116,7 @@ const About = () => {
                         <strong>03 .</strong>
                         <span>Address : </span>{" "}
                         <a href="">
-                          NO.51, FLOOR 2TH, UNIT 6, 67 SQ, NARMAK, TEHRAN, IRAN
+                        TEHRAN, IRAN
                         </a>
                       </Li>
                     </ul>

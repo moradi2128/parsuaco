@@ -19,9 +19,12 @@ export const Wrapper = styled.nav`
   align-items: center;
 `;
 export const NavLogo = styled(Link)`
-  display: inline-block;
+  /* display: inline-block; */
   height: 90px;
   width: 90px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
   img {
     height: 100%;
     width: 100%;

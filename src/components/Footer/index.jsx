@@ -37,7 +37,10 @@ export const AboutSection = styled.div`
 export const Logo = styled(Link)`
   width: 50px;
   height: 50px;
-  display: inline-block;
+  /* display: inline-block; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   img {
     width: 100%;
     height: 100%;

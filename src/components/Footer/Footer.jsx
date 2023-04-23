@@ -43,7 +43,8 @@ const Footer = () => {
           {/* === About Section === */}
           <AboutSection>
             <Logo to="/">
-              <img src={logo} alt="logo" />
+              <h2>Logo</h2>
+              {/* <img src={logo} alt="logo" /> */}
             </Logo>
             <AboutDescription>
               <p>
@@ -63,7 +64,7 @@ const Footer = () => {
               <ul>
                 <ContactItem>
                   <h3>email :</h3>
-                  <a href="mailto:moradi8785@gmail.com">moradi8785@gmail.com</a>
+                  <a href="mailto:moradi2565@gmail.com">moradi2565@gmail.com</a>
                 </ContactItem>
                 <ContactItem>
                   <h3>call :</h3>
@@ -72,7 +73,8 @@ const Footer = () => {
                 <ContactItem>
                   <h3>find us :</h3>
                   <a href="#">
-                    No.51, Floor 2th, Unit 6, 67 Sq, Narmak, Tehran, Iran
+                    {/* No.51, Floor 2th, Unit 6, 67 Sq, Narmak, Tehran, Iran */}
+                    Tehran, Iran
                   </a>
                 </ContactItem>
               </ul>
@@ -114,7 +116,7 @@ const Footer = () => {
                 Development by{" "}
                 <a href="https://github.com/moradi2128">moradi</a>
               </span>
-              <span>© Parsuaco 2022 / All rights reserved. </span>
+              <span>2022 / All rights reserved © </span>
             </SubContainerText>
             <BackToTop onClick={scrollToTop}>
               back to top

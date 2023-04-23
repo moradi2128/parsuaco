@@ -22,7 +22,8 @@ const Header = () => {
       <HeaderSection>
         <Wrapper className="container">
           <NavLogo to="/">
-            <img src={logo} alt="logo"></img>
+            <h2>Logo</h2>
+            {/* <img src={logo} alt="logo"></img> */}
           </NavLogo>
           {/* NavBar and Sidebar */}
           {matchesM ? <NavList /> : <Sidebar />}
