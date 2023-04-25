@@ -91,9 +91,9 @@ export const SubTitle = styled.h4`
 `;
 export const AnimationStart = styled(motion.div)`
   background: ${(props) => props.theme.colors.colorMain};
-  height: 108%;
+  height: 110%;
   position: absolute;
-  top: -40px;
+  top: -45px;
   right: 0;
   left: -57px;
   z-index: 1;
